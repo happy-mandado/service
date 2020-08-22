@@ -1,0 +1,42 @@
+{
+  "name": "@happy-mandado/service",
+  "version": "1.0.0",
+  "description": "Happy Mandado service",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "start-dev": "NODE_ENV=develop node index.js",
+    "test-unit": "NODE_ENV=test ./node_modules/mocha/bin/mocha --reporter spec -u tdd 'test/unit/**/*.test.js'",
+    "test-path": "NODE_ENV=test ./node_modules/mocha/bin/mocha --reporter spec -u tdd -- ",
+    "test-unit-coverage": "NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/_mocha -u tdd 'test/unit/**/*_test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happy-mandado/service.git"
+  },
+  "keywords": [
+    "happy-mandado",
+    "back-end"
+  ],
+  "author": "grevych@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/happy-mandado/service/issues"
+  },
+  "homepage": "https://github.com/happy-mandado/service#readme",
+  "dependencies": {
+    "@happy-mandado/auth": "file:../../auth/repo",
+    "config": "^3.3.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.18"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "minimist": "^1.2.5",
+    "mocha": "^7.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.2"
+  }
+}
