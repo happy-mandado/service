@@ -2,6 +2,12 @@ module.exports = {
   api: {
     port: 'API_PORT',
     auth: {
+      cookieName: 'API_AUTH_COOKIE_NAME',
+      domain: 'API_AUTH_DOMAIN',
+      scope: 'API_AUTH_SCOPE',
+      audience: 'API_AUTH_AUDIENCE',
+      origin: 'API_AUTH_ORIGIN',
+      credentials: 'API_AUTH_CREDENTIALS',
     },
   },
   db: {
@@ -9,6 +15,9 @@ module.exports = {
     scheme: 'DB_SCHEME',
     options: {
       useNewUrlParser: 'DB_OPTIONS_USE_NEW_URL_PARSER',
-    }
+    },
+    database: 'DB_DATABASE',
+    host: 'DB_HOST',
+    port: 'DB_PORT',
   },
 };
