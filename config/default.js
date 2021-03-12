@@ -1,11 +1,11 @@
 module.exports = {
   api: {
     port: '',
-    origin: '',
     auth: {
       cookieName: '',
       domain: '',
       scope: '',
+      origin: '',
       audience: '',
     },
   },
