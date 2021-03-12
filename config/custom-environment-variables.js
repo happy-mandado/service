@@ -1,6 +1,7 @@
 module.exports = {
   api: {
     port: 'API_PORT',
+    dynamicPort: 'PORT',
     auth: {
       cookieName: 'API_AUTH_COOKIE_NAME',
       domain: 'API_AUTH_DOMAIN',
