@@ -26,7 +26,7 @@
   "homepage": "https://github.com/happy-mandado/service#readme",
   "dependencies": {
     "@elastic/elasticsearch": "^7.10.0",
-    "@happy-mandado/auth": "file:../../auth/repo",
+    "@happy-mandado/auth": "1.0.1",
     "config": "^3.3.1",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
